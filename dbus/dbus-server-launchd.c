@@ -40,6 +40,10 @@
 #include <launch.h>
 #include <errno.h>
 
+#ifdef HAVE_UNISTD_H
+#include <unistd.h>
+#endif /* HAVE_UNISTD_H */
+
 #include "dbus-misc.h"
 #include "dbus-server-socket.h"
 #include "dbus-sysdeps-unix.h"
